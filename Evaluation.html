@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width", initial-scale=1.0">
+        <title>Evaluation</title>
+
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+
+    <body>
+    
+        <header>
+            <div id="header">
+            <b>Menu: </b>
+                <a class = "menu" href = "index.html">
+            <b>Home</b></a> | 
+                <a href = "Faculty.html">
+            <b>Faculty</b></a> | 
+                <a href = "Resources.html">
+            <b> Resources</b></a>  | 
+                <a href = "Evaluation.html">
+            <b>Evaluation</b></a> | 
+            </div>    
+        <br>
+            <a href="http://ccse.kennesaw.edu/it"><img src = "wings.png" alt = "Kennesaw" Width = "260px" height = "170px" ></a>
+      
+            <h1 >Center for Applied Research in Information Technology</h1>
+        <div id="header">
+        </div>
+        </header>
+       
+        <p>
+         <h2 ALIGN = "center">Summer Student Assistant Positions</h2> 
+        CARIT provides various opportunities for the students here at Kennesaw State University. There are part time and full time positions avaliable that can help the students get the experience they need to succeed in the future. Each position will teach them different set of skills that will be needed in thier future endeavors. The students get to learn skills such as team work, leadership, communication, honest, responsibility, and many more. These opportunities also give the students a chance to learn from the best in thier particular field. There are many things that are not though in school but with the help of these positions, students get to explore and learn in depth about the real world job experience. Here at CARIT our goal is to help our students to the best of our ability. 
+        </p>
+
+        <h2 ALIGN = "center">Student Evaluation</h2>
+        <div class="center">
+        <h3> Instructions: </h3>
+        <ul>
+            1. Select your current student status.
+        </ul>
+        <ul>
+            2. Put your grades for each of the courses displayed.
+        </ul>
+        <ul>
+           3.  Click on the "Evaluate" button to check if you are eligible to proceed forward with the application process.     
+        </ul>
+        <article>
+        
+        <form>
+            <p1><b>Student Status</b></p1>
+            <select id="mySelect" onchange='myFunction(this.value)'>
+            <option value="0">select</option>
+            <option value="1">Under Graduate</option>
+            <option value="2">Graduate</option>
+            </select>
+
+               <br>
+               <label id ="course">Courses</label>
+               <br>
+               <label id="sub1"></label>
+            <br>
+            <label id="gadlbl1">Grade Obtained</label>
+            
+            <select id="gad1">
+            <option value="4">a</option>
+            <option value="3">b</option>
+            <option value="2">c</option>
+            <option value="1">d</option>
+            </select><br>
+            
+            <label id="sub2"></label>
+            <br>
+            <label id="gadlbl2">Grade Obtained</label>
+            
+            <select id="gad2">
+            <option value="4">a</option>
+            <option value="3">b</option>
+            <option value="2">c</option>
+            <option value="1">d</option>
+            </select>
+            
+            <br>
+            <label id="sub3"></label>
+            <br>
+            <label id="gadlbl3">Grade Obtained</label>
+            
+            <select id="gad3">
+            <option value="4">a</option>
+            <option value="3">b</option>
+            <option value="2">c</option>
+            <option value="1">d</option>
+            </select>
+            
+            <br>
+            <label id="sub4"></label>
+            <br>
+            <label id="gadlbl4">Grade Obtained</label>
+            
+            <select id="gad4">
+            <option value="4">a</option>
+            <option value="3">b</option>
+            <option value="2">c</option>
+            <option value="1">d</option>
+            </select>
+            
+            <br>
+        </form>
+                        
+            <button type="button" onclick="evalute()">Evaluate</button>
+            <br> 
+            <br>
+            <label id="msg" for="chk2"></label>
+    </article>
+    </div>
+    <script>
+            
+            document.getElementById("course").style.visibility = "hidden";
+            document.getElementById("gad1").style.visibility = "hidden";
+            document.getElementById("gad2").style.visibility = "hidden";
+            document.getElementById("gad3").style.visibility = "hidden";
+            document.getElementById("gad4").style.visibility = "hidden";
+            document.getElementById("gadlbl1").style.visibility = "hidden";
+            document.getElementById("gadlbl2").style.visibility = "hidden";
+            document.getElementById("gadlbl3").style.visibility = "hidden";
+            document.getElementById("gadlbl4").style.visibility = "hidden";
+            
+        function myFunction(value) {
+            document.getElementById("msg").innerHTML = "";
+            if(value == '1') {
+                document.getElementById("sub1").innerHTML = "Course 1: CSE 3153 Database Systems";
+                document.getElementById("sub2").innerHTML = "Course 2: CSE 3801 Professional Pratices and Ethics";
+                document.getElementById("sub3").innerHTML = "Course 3: CSE 2300 Discrete Structures for Computing";
+                document.getElementById("sub4").innerHTML = "Course 4: IT 3123 Hardware & Software Concepts";
+                document.getElementById("gad1").style.visibility = "visible";
+                document.getElementById("gad2").style.visibility = "visible";       
+                document.getElementById("gad3").style.visibility = "visible";
+                document.getElementById("gad4").style.visibility = "visible";
+                document.getElementById("corse").style.visibility = "visible";
+                document.getElementById("gadlbl1").style.visibility = "visible";
+                document.getElementById("gadlbl2").style.visibility = "visible";
+                document.getElementById("gadlbl3").style.visibility = "visible";
+                document.getElementById("gadlbl4").style.visibility = "visible";
+            }
+            
+            if(value == '2'){
+                document.getElementById("sub1").innerHTML = "Course 1: IT 3003 Professional Development & Entrepreneurship";
+                document.getElementById("sub2").innerHTML = "Course 2: IT 3203 Intro to Web Development";
+                document.getElementById("sub3").innerHTML = "Course 3: IT 3223 Software Acquisition & Project Management:";
+                document.getElementById("sub4").innerHTML = "Course 4: IT 3423 Operating Systems Concepts & Administration";
+                document.getElementById("gad1").style.visibility = "visible";
+                document.getElementById("gad2").style.visibility = "visible";
+                document.getElementById("gad3").style.visibility = "visible";
+                document.getElementById("gad4").style.visibility = "visible";
+                document.getElementById("corse").style.visibility = "visible";
+                document.getElementById("gadlbl1").style.visibility = "visible";
+                document.getElementById("gadlbl2").style.visibility = "visible";
+                document.getElementById("gadlbl3").style.visibility = "visible";
+                document.getElementById("gadlbl4").style.visibility = "visible";
+            }
+            
+            if(value == '0'){
+                document.getElementById("sub1").innerHTML = "";
+                document.getElementById("sub2").innerHTML = "";
+                document.getElementById("sub3").innerHTML = "";
+                document.getElementById("sub4").innerHTML = "";
+                document.getElementById("gad1").style.visibility = "hidden";
+                document.getElementById("gad2").style.visibility = "hidden";
+                document.getElementById("gad3").style.visibility = "hidden";
+                document.getElementById("gad4").style.visibility = "hidden";
+                document.getElementById("corse").style.visibility = "hidden";
+                document.getElementById("gadlbl1").style.visibility = "hidden";
+                document.getElementById("gadlbl2").style.visibility = "hidden";
+                document.getElementById("gadlbl3").style.visibility = "hidden";
+                document.getElementById("gadlbl4").style.visibility = "hidden";
+            }
+        }
+
+        function evalute(){
+            var a=document.getElementById("gad1").value;
+            var b=document.getElementById("gad2").value;
+            var c=document.getElementById("gad3").value;  
+            var d=document.getElementById("gad3").value;  
+            
+            if(document.getElementById("mySelect").value=='1'){
+               if((Number(a)+Number(b)+Number(c)+Number(d))/2 >3.2){
+                    document.getElementById("msg").innerHTML = "Congratulations! Click on the link below to complete the appilcation";
+               }else{   
+                    document.getElementById("msg").innerHTML = "Sorry, you are not eligible. Thank you for your interest";
+               }
+            }
+            
+            if(document.getElementById("mySelect").value=='2'){
+               if((Number(a)+Number(b)+Number(c)+Number(d))/2 >3.7){
+                    document.getElementById("msg").innerHTML = "Congratulations! Click on the link below to complete the appilcation";
+                }else{
+                    document.getElementById("msg").innerHTML = "Sorry, you are not eligible. Thank you for your interest";
+                }
+            }
+            
+            if(document.getElementById("mySelect").value=='0'){
+               document.getElementById("msg").innerHTML = "";
+            }
+        }
+            
+    </script>
+    </body>
+
+    <footer>
+        <p>
+            Disclaimer: This a class project and if you need any more information visit the <a href = "http://it5443.azurewebsites.net">class website</a>
+        </p>
+    </footer>
+</html>
